@@ -1,0 +1,23 @@
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install python3.11
+
+python3.11 --version
+> Python 3.11.3
+
+sudo apt install python3.11-venv
+
+python3.11 -m venv $HOME/dev/python/venvs/3.11/langchain
+
+. $HOME/dev/python/venvs/3.11/langchain/bin/activate
+
+python -m pip install --upgrade pip
+
+cd $HOME/dev/otimizai/langchain/workspace
+
+python -m pip install -r requirements.txt
+
+EXTENSÕES DO VSCODE INSTALADAS:
+Python
+Black Formatter
+
