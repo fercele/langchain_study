@@ -152,9 +152,8 @@ class LangChainTest:
 
 if __name__ == "__main__":
 
-    os.environ["OPENAI_API_KEY"] = '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'#get_api_key("openai")
-    os.environ["SERPAPI_API_KEY"] = '2ae744451d1287ed4b3f6c2b89b11cb934fb6115566c7d6dff70473dc6075cd8'#get_api_key("serp")
-    #print(os.environ["OPENAI_API_KEY"])
+    os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY", get_api_key("openai"))
+    os.environ["SERPAPI_API_KEY"] = os.environ.get("SERPAPI_API_KEY", get_api_key("serp"))
 
     llm: OpenAI = OpenAI(temperature=0.9)
 
