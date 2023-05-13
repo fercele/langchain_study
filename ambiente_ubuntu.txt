@@ -7,7 +7,7 @@ python3.11 --version
 
 sudo apt install python3.11-venv
 
-python3.11 -m venv $HOME/dev/python/venvs/3.11/langchain
+python3.11 -m venv $HOME/dev/python/venvs/langchain
 
 . $HOME/dev/python/venvs/3.11/langchain/bin/activate
 
